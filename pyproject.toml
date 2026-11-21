@@ -1,0 +1,13 @@
+[project]
+name = "python-rag-practice"
+version = "0.1.0"
+description = "Graded Python exercises, with a Claude Code tutor, from no Python to a RAG pipeline and its eval harness."
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+addopts = "-q --import-mode=importlib"
+testpaths = ["exercises"]
