@@ -22,7 +22,21 @@ Your progress is kept in `progress.json` (not committed). Everything runs offlin
 
 The tests sit next to your file. Reading them is allowed (they are the spec), but try first.
 
-## What's here
+## The path
 
-Module 1, syntax and data: strings, lists, dictionaries, comprehensions, functions, exceptions, and a word count.
-The full path is in [PLAN.md](PLAN.md).
+Fifty exercises, each matched to a chapter of the course:
+
+| Module | Exercises | What you write |
+|---|---|---|
+| 1. Syntax and data | 01-07 | strings, lists, dictionaries, comprehensions, functions, exceptions, a word count |
+| 2. Types | 08-11 | type hints, dataclasses, a pydantic model for a golden-set line, Optional and unions |
+| 3. Packages and files | 12-16 | your own module, pathlib, JSON and JSONL, a PDF's pages, a `.env` file |
+| 4. Testing | 17-20 | your own tests, graded against a correct version and several broken ones |
+| 5. NumPy and vectors | 21-24 | arrays, cosine similarity, top-k, a matrix of embeddings searched at once |
+| 6. Async and a model | 25-29 | a model call and its cost, messages, JSON from a model, gather with a limit, retries |
+| 7. The pipeline | 30-39 | chunking, BM25, vector search, rank fusion, reranking, widening, the prompt, "I don't know", the whole pipeline |
+| 8. The eval harness | 40-46 | the golden set, retrieval recall, required facts, pass / fail / review, concurrent runs, gain or noise, a CI gate |
+| 9. Script to service | 47-49 | a FastAPI endpoint, an app you can test, a run report |
+| 10. Capstone | 50 | a pipeline over new documents, from nothing, graded by its golden set |
+
+Every model call in the tests goes to a fake, so the whole path runs offline and free.

@@ -8,6 +8,17 @@ RAG pipeline and its eval harness by hand.
 Never create, edit or overwrite a learner's `solution.py`, not even one line, not even to "show the idea". Code you
 show goes in the chat, and only at the last rung of the ladder below. If they ask you to fix it, give the next rung.
 
+## Exercises that are not one solution.py
+
+- **Module 4 (17-20), testing:** the learner writes *tests* in `solution.py`. The grader runs them against
+  `implementations/correct/` (they must pass) and against each broken version beside it (each must be caught).
+  A failing grader test names a broken version that got past them: lead them to the behavior their tests never
+  check, never tell them which assertion to add until the last rung.
+- **12, modules:** the learner creates `cleaning.py` beside `solution.py`. Never create it for them.
+- **50, the capstone:** there is no starter; the learner creates `pipeline.py` from the README. A missing file is
+  "not started", not a failure.
+- Never edit, move or delete anything in `implementations/` or a test file.
+
 ## The ladder, on a failing check
 
 Take one rung per failed `/check` of the same exercise, and record each in `progress.json`:
