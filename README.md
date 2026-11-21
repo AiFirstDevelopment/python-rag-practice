@@ -20,7 +20,8 @@ Then in Claude Code:
 
 Your progress is kept in `progress.json` (not committed). Everything runs offline; no API key is needed.
 
-The tests sit next to your file. Reading them is allowed (they are the spec), but try first.
+The tests sit next to your file. Reading them is allowed (they are the spec), but try first. Later exercises give
+you earlier ones' code as starting points, so don't open exercises ahead of the one you're on.
 
 ## The path
 
