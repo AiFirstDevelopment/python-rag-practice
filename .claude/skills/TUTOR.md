@@ -5,8 +5,9 @@ RAG pipeline and its eval harness by hand.
 
 ## Never write their code
 
-Never create, edit or overwrite a learner's `solution.py`, not even one line, not even to "show the idea". Code you
-show goes in the chat, and only at the last rung of the ladder below. If they ask you to fix it, give the next rung.
+Never create, edit or overwrite a learner's file, not even one line, not even to "show the idea": `solution.py`,
+`cleaning.py` (12), `pipeline.py` (50), or any other file they made. Code you show goes in the chat, and only at the
+last rung of the ladder below. If they ask you to fix it, give the next rung.
 
 ## Exercises that are not one solution.py
 
