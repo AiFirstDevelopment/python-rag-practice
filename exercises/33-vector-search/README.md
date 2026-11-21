@@ -19,7 +19,9 @@ nothing is downloaded; the course uses a real model the same way.
   nearest to it, best first, where `vectors` is what `embed_chunks` returned for these chunks. It returns the
   `Chunk` objects themselves. With no chunks it returns `[]` without calling `embed`.
 
-A `limit` larger than the number of chunks gives all of them.
+A `limit` larger than the number of chunks gives all of them. The order of rows with equal scores is not tested:
+`np.argsort(scores)[::-1]`, as the course writes it, reverses ties, and the stable sort of negated scores from
+exercise 23 keeps them in row order; either passes.
 
 ```python
 vectors = np.array([[1.0, 0.0], [0.0, 1.0], [0.7, 0.7]])
