@@ -10,6 +10,9 @@ One line of the file:
 {"id": "returns-01", "category": "answerable", "question": "How long do I have to return an item?", "expected_behavior": "answer", "required_facts": [{"fact": "30 days of delivery", "match": ["30 days", "thirty days"]}], "sources": [{"file": "returns.txt", "page": 1}]}
 ```
 
+Exercise 10 built a first version of these models. This one is the harness's own: it adds `category`, which the
+run report groups by, and leaves out the length and page checks to match the course's `evals/harness.py`.
+
 Write in `solution.py`:
 
 - Three pydantic models:
