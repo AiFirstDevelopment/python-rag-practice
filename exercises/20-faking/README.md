@@ -30,8 +30,26 @@ A module `asking` with one function, `ask(client, question, passages)`, and thre
 
 In `solution.py`, replace the placeholder with tests for `ask`, and the fake client they use. The fake needs a
 `messages` attribute with a `create` method that keeps the keyword arguments it was called with (and how many times
-it was called) and returns a reply of the shape above. `types.SimpleNamespace` makes an object with whatever
-attributes you give it, which is enough for the reply:
+it was called) and returns a reply of the shape above. A class is how you make such an object: `__init__` runs when one is made and sets its attributes on `self`, and
+each method takes `self` first. `**request` in a parameter list collects every keyword argument into one dict:
+
+```python
+class Recorder:
+    def __init__(self):
+        self.calls = []                  # starts empty for each Recorder made
+
+    def send(self, **request):
+        self.calls.append(request)       # send(to="a", body="hi") stores {"to": "a", "body": "hi"}
+        return "sent"
+
+
+recorder = Recorder()
+recorder.send(to="a", body="hi")
+recorder.calls                           # [{"to": "a", "body": "hi"}]
+```
+
+An attribute can hold any object, including the object itself (`self.messages = self`) or another one you made.
+`types.SimpleNamespace` makes an object with whatever attributes you give it, which is enough for the reply:
 
 ```python
 from types import SimpleNamespace
