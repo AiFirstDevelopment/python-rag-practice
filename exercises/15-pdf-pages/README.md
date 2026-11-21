@@ -13,8 +13,8 @@ Write two functions in `solution.py`. Every `path` is a `Path`.
   from 1.
   - A `.pdf` gives one tuple per page that has text. Pages without text are left out, and the other pages keep
     their real numbers.
-  - A `.txt` or `.md` file is one page: `[(1, text)]`, read as UTF-8, whitespace removed from both ends; an empty
-    file gives `[]`.
+  - A `.txt` or `.md` file is one page: `[(1, text)]`, read as UTF-8, whitespace removed from both ends; a file
+    that is empty or only whitespace gives `[]`.
   - The suffix may be in any case (`.PDF`). Any other suffix raises `ValueError`.
 
 ```python
