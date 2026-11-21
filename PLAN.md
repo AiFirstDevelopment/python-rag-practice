@@ -14,16 +14,20 @@ the code; this repository makes you write it.
   concept, and the solution only when you ask for it. It never edits your file.
 - `progress.json` (not committed) records each exercise passed, the hints it took and the mistakes made; the next
   session picks up there, and an exercise you struggled with comes back later as a short review.
-- Every test runs offline and free: model calls go to a scripted fake client, embeddings to a small fake (or the real
-  model, opt-in). An API key is needed only for the optional live runs.
+- Every test runs offline and free: model calls go to a scripted fake client, embeddings to a small fake. No API key
+  is needed.
 
 ## Layout
 
 ```
-.claude/skills/practice/SKILL.md   the tutor: order, the hint ladder, never write the answer, progress
+.claude/skills/TUTOR.md            the tutor's rules: order, the hint ladder, never write the answer, progress
+.claude/skills/practice/SKILL.md   /practice: opens the next exercise
+.claude/skills/check/SKILL.md      /check: runs its tests and tutors a failure
 exercises/NN-slug/README.md        the task
-exercises/NN-slug/solution.py      your file (starts as the starter)
+exercises/NN-slug/solution.py      your file (starts as the starter; 50 has none, you create pipeline.py)
 exercises/NN-slug/test_*.py        the tests the tutor runs
+exercises/17-20/implementations/   module 4: the correct and broken code your tests are graded against
+exercises/50-capstone/corpus/      the capstone's documents, with its golden.jsonl
 progress.json                      your record (gitignored)
 pyproject.toml, uv.lock            Python 3.12, pytest, the same packages as the course
 ```
@@ -54,10 +58,10 @@ Each module matches a chapter of the course, so a viewer can watch the chapter a
 8. **The eval harness** (ch. 11), 7: load the golden set; score retrieval (did it find the sources); check required
    facts in an answer; pass, fail and review; run cases concurrently; compare two runs and tell a gain from noise;
    fail CI on a real drop.
-9. **From script to service** (ch. 12-13), 3: a FastAPI endpoint for the pipeline; testing it; exploring a run in a
-   notebook.
-10. **Capstone**, 1: the pipeline and harness over a new set of documents, with no starter code, graded by its golden
-    set.
+9. **From script to service** (ch. 12-13), 3: a FastAPI endpoint for the pipeline; testing it; a run report (the
+   summary the course's notebook explores, as functions).
+10. **Capstone**, 1: the pipeline over a new set of documents, with no starter code, graded by its golden set (a
+    harness of your own is suggested, not graded).
 
 ## Is it worth building (2026-11-21)
 
@@ -69,5 +73,5 @@ not the skill file: about 50 exercises, each a README, a starter and tests.
 
 1. The skill, the layout, `/practice` and `/check`, with module 1 (7 exercises). Joel works through it and says
    whether the hint ladder feels right.
-2. The other modules, one at a time.
+2. The other modules (built: all 50 exercises are in `exercises/`).
 3. The public repository (Joel creates it; a session cannot), a README with how to install, and a Short.
