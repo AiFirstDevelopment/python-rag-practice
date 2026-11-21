@@ -15,4 +15,17 @@ top_words("The refund is a refund. The receipt is the proof.", 2, {"the", "is", 
 
 Write the word splitting again here (copy your own from 04 if you like); this file stands alone.
 
-You will use: everything so far, plus `sorted` with a `key`, or `collections.Counter`.
+`sorted(items, key=f)` sorts by what the function `f` returns for each item. `lambda x: ...` writes a one-line
+function in place. A tuple as the key sorts by its first part, then by the second when the first is equal; and
+negating a number turns largest-first into smallest-first:
+
+```python
+people = [("ana", 31), ("bo", 25), ("cy", 31)]
+sorted(people, key=lambda person: person[1])                  # by age: bo, then ana and cy
+sorted(people, key=lambda person: (-person[1], person[0]))    # oldest first, names A-Z among equals: ana, cy, bo
+```
+
+`collections.Counter(words)` counts a list for you, and `.items()` gives its `(word, count)` pairs.
+`Counter.most_common(n)` does not put equal counts in alphabetical order, so the sort is still yours.
+
+You will use: everything so far, plus `sorted` with a `key` and a `lambda`, and `collections.Counter` if you like.
