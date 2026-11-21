@@ -32,6 +32,24 @@ with TestClient(app) as client:          # "with" runs the lifespan: startup on 
     # {"answer": "...", "sources": ["returns.txt, page 1", ...]}
 ```
 
+The two FastAPI shapes this needs, on other names:
+
+```python
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    app.state.prices = read_prices()     # runs once, when the app starts
+    yield                                # the app serves requests while the function waits here
+    # anything after yield runs once, when the app stops
+
+
+app = FastAPI(lifespan=lifespan)
+
+
+@app.get("/price")
+async def price(db=Depends(get_db)):     # FastAPI calls get_db() for each request and passes the result in
+    ...
+```
+
 Read `test_test_client.py` after you pass: it is the shape of the tests you will write for your own service.
 
 You will use: `@asynccontextmanager` and `FastAPI(lifespan=...)`, `yield`, `app.state`, `Depends`, `async def`
