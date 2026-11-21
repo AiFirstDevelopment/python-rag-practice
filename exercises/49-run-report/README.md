@@ -31,13 +31,16 @@ Write three functions in `solution.py`:
   and separator below, one row per category in alphabetical order, and a last row `all`. Pass rates are whole
   percents (`f"{rate:.0%}"`).
 
+For a `run.jsonl` holding the first four results in `test_run_report.py` (`returns-01` to `returns-03` and
+`absent-01`):
+
 ```python
 results = load_results(Path("run.jsonl"))
 summary = summarize(results, 5.0, 25.0, slowest=2)
 # {"cases": 4, "passed": 3, "pass_rate": 0.75,
 #  "by_category": {"answerable": {"cases": 3, "passed": 2, "pass_rate": 0.666...},
 #                  "absent": {"cases": 1, "passed": 1, "pass_rate": 1.0}},
-#  "slowest": ["returns-03", "returns-01"], "cost": 0.0305}
+#  "slowest": ["returns-03", "returns-01"], "cost": 0.02875}
 print(to_markdown(summary))
 ```
 
