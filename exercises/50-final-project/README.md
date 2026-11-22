@@ -1,6 +1,6 @@
-# 50. Capstone: a pipeline over new documents
+# 50. Final project: a pipeline over new documents
 
-> **Your lesson:** [lessons/50-capstone.md](../../lessons/50-capstone.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+> **Your lesson:** [lessons/50-final-project.md](../../lessons/50-final-project.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
 
 Everything so far was one function at a time, with a starter. Here there is none. You build the pipeline of module
 7 over a set of documents you have not seen, and the golden set of module 8 says whether it works. This is the job
@@ -12,7 +12,7 @@ as it arrives in practice: a folder of documents, a list of questions, and nothi
   `disruptions.txt`), about 7,000 characters together. A file has several pages; a line that is exactly
   `--- page break ---` ends one page and starts the next. The first page is page 1.
 - `golden.jsonl`: ten cases in the format of exercise 40. Eight expect an answer, two expect "I don't know".
-- `test_capstone.py`: runs every case through your pipeline and scores it by the rules of exercise 43.
+- `test_final_project.py`: runs every case through your pipeline and scores it by the rules of exercise 43.
 
 ## What to write
 
@@ -69,7 +69,7 @@ reply = await answer("Is there a cabin where I can sleep during the crossing?", 
 
 ## Working on it
 
-Run `uv run pytest exercises/50-capstone` (or `/check`). Each golden case is its own test, named by the case id, so
+Run `uv run pytest exercises/50-final-project` (or `/check`). Each golden case is its own test, named by the case id, so
 a failure tells you which question, and the message shows the reply and the missing facts. When a case fails, find
 out which half is wrong before changing anything: print the chunks your search returned for that question and look
 for the sentence that answers it. A harness of your own from module 8 (`harness.py`, beside `pipeline.py`) that
