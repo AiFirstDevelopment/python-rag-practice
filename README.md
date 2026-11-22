@@ -17,9 +17,11 @@ claude                                            # or open the folder in VS Cod
 
 Then in Claude Code:
 
-- `/practice` opens the next exercise.
-- `/check` runs its tests. When one fails, the tutor asks a question, then gives a hint, then explains the concept;
-  it shows a solution only if you ask, and it never edits your file.
+- `/teach-me` opens the next exercise and teaches it from a worked example: a lesson opens in a VS Code tab, you
+  close it and write the code from memory.
+- `/check` runs its tests, scores your attempt, shows each mistake and the line that caused it, and offers a restart
+  from a blank file until it passes. It never edits your code.
+- `/progress` shows your map: one cell per exercise, a row per module, the passed ones lit.
 
 Your progress is kept in `progress.json` (not committed). Everything runs offline; no API key is needed.
 
