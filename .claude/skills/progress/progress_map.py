@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[3]
 MODULES = [
     ("Syntax and data", 1, 7), ("Types", 8, 11), ("Packages and files", 12, 16), ("Testing", 17, 20),
     ("NumPy and vectors", 21, 24), ("Async and a model", 25, 29), ("The pipeline", 30, 39),
-    ("The eval harness", 40, 46), ("FastAPI service", 47, 49), ("Capstone", 50, 50),
+    ("The eval harness", 40, 46), ("FastAPI service", 47, 49), ("Final project", 50, 50),
 ]
 AMBER, NAVY, EDGE, INK, MUTED, BG = "#f59e0b", "#242e48", "#465478", "#eef2ff", "#94a3b8", "#14171f"
 CELL, GAP, LEFT, TOP, ROW = 44, 8, 200, 120, 58
@@ -69,7 +69,7 @@ def main():
     out.append(f'<rect x="{LEFT}" y="{y}" width="{CELL * 2 + GAP}" height="{CELL}" rx="8" fill="{fill}" stroke="{stroke}" '
                f'stroke-width="{sw}" stroke-dasharray="{"" if mcp_done or mcp_here else "5 4"}"><title>examples/mcp-server</title></rect>')
     out.append(f'<text x="{LEFT + CELL + GAP / 2}" y="{y + CELL / 2 + 5}" font-size="13" text-anchor="middle" fill="{label}">MCP</text>')
-    out.append(f'<text x="{LEFT + 2 * (CELL + GAP) + 6}" y="{y + CELL / 2 + 5}" font-size="13" fill="{MUTED}">worked example, after the capstone</text>')
+    out.append(f'<text x="{LEFT + 2 * (CELL + GAP) + 6}" y="{y + CELL / 2 + 5}" font-size="13" fill="{MUTED}">worked example, after the final project</text>')
     if mcp_here:
         current_name = "MCP server"
     sub = f"Now: {current} · {current_name}" if current and current not in done else "Type /teach-me"
