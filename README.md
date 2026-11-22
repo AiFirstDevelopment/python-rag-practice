@@ -23,7 +23,8 @@ Then in Claude Code:
   from a blank file until it passes. It never edits your code.
 - `/progress` shows your map: one cell per exercise, a row per module, the passed ones lit.
 
-Your progress is kept in `progress.json` (not committed). Everything runs offline; no API key is needed.
+Each exercise's task is in its folder's `README.md` (the first line of its starter file says so), and
+`/progress` links to the current one. Your progress is kept in `progress.json` (not committed). Everything runs offline; no API key is needed.
 
 The tests sit next to your file. Reading them is allowed (they are the spec), but try first. Later exercises give
 you earlier ones' code as starting points, so don't open exercises ahead of the one you're on.

@@ -1,3 +1,4 @@
+# Your task is in README.md in this folder. Write your code here, save, then type /check in the Claude chat.
 from dataclasses import dataclass
 
 # ---- Given: the Passage, the request builder from exercise 37 and the fallback constants. Do not change them. ----

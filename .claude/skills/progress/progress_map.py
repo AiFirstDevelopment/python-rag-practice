@@ -85,7 +85,11 @@ def main():
     lessons.mkdir(exist_ok=True)
     (lessons / "progress.svg").write_text("\n".join(out))
     review = progress.get("review", [])
-    lines = ["# Progress", "", "![Your progress map](progress.svg)", ""]
+    lines = ["# Progress", ""]
+    if current and current not in done:
+        task = "../examples/mcp-server/README.md" if current == "mcp-server" else f"../exercises/{current}/README.md"
+        lines += [f"**Now: {current}.** [Read the task]({task}), write it in its folder, then type `/check`.", ""]
+    lines += ["![Your progress map](progress.svg)", ""]
     if review:
         lines += [f"**To review:** {', '.join(review)}", ""]
     lines += ["Type `/teach-me` for the next exercise, taught from a worked example, and `/check` to have it graded."]
