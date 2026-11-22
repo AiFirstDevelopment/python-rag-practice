@@ -75,3 +75,5 @@ not the skill file: about 50 exercises, each a README, a starter and tests.
    whether the hint ladder feels right.
 2. The other modules (built: all 50 exercises are in `exercises/`).
 3. The public repository (Joel creates it; a session cannot), a README with how to install, and a Short.
+4. An MCP server over the pipeline as a worked example (`examples/mcp-server/`, FastMCP, 2026-11-22): tools,
+   resources, prompts, transports, sign-in, confirmations, long jobs; tested through an in-memory client and HTTP.
