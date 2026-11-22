@@ -1,5 +1,5 @@
 # Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 28.
-# Write it there, save, then type /check in the Claude chat.
+# Each EXERCISE-TODO comment below is one piece to write. Save, then type /check in the Claude chat.
 import math
 import re
 from collections import Counter
@@ -31,9 +31,9 @@ K1 = 1.2
 B = 0.75
 
 
-# bm25(chunks, question, limit): return the chunks that share at least one word with the question (use words() for
-# the chunks and the question), best score first, at most limit of them. A chunk's score is the sum, over each distinct
-# word w of the question that the chunk holds, of
+# EXERCISE-TODO: bm25(chunks, question, limit): return the chunks that share at least one word with the question (use
+# words() for the chunks and the question), best score first, at most limit of them. A chunk's score is the sum, over
+# each distinct word w of the question that the chunk holds, of
 #   idf(w) * tf * (K1 + 1) / (tf + K1 * (1 - B + B * length / average))
 #   idf(w) = ln(1 + (N - n + 0.5) / (n + 0.5))
 # where tf is how many times w is in the chunk's words, length is how many words the chunk has, average is the mean

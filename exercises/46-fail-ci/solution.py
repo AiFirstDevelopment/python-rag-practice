@@ -1,5 +1,5 @@
 # Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 30.
-# Write it there, save, then type /check in the Claude chat.
+# Each EXERCISE-TODO comment below is one piece to write. Save, then type /check in the Claude chat.
 import json
 import sys
 from dataclasses import dataclass
@@ -29,24 +29,24 @@ def verdict(comparison: Comparison, threshold: int = 2) -> str:
 
 # ---- Yours ----
 
-# load_run(path): return the run file at path (JSONL, one {"id": ..., "status": ...} a line) as a dict from id to
-# status. Blank lines are skipped.
+# EXERCISE-TODO: load_run(path): return the run file at path (JSONL, one {"id": ..., "status": ...} a line) as a dict
+# from id to status. Blank lines are skipped.
 def load_run(path: Path) -> dict[str, str]:
     raise NotImplementedError
 
 
-# gate(before, after, threshold=2): compare the two runs (dicts) and return a tuple (code, message). code is 1 when the
-# verdict is "drop", otherwise 0. message is one line containing the verdict word (drop, gain or noise); on a drop it
-# also contains the id of every lost case. The rest of the wording is yours.
+# EXERCISE-TODO: gate(before, after, threshold=2): compare the two runs (dicts) and return a tuple (code, message). code
+# is 1 when the verdict is "drop", otherwise 0. message is one line containing the verdict word (drop, gain or noise);
+# on a drop it also contains the id of every lost case. The rest of the wording is yours.
 #   a drop of three  ->  (1, "drop: 3 lost (returns-02, shipping-01, warranty-01), 0 gained")
 def gate(before: dict[str, str], after: dict[str, str], threshold: int = 2) -> tuple[int, str]:
     raise NotImplementedError
 
 
-# main(argv): argv is the command-line arguments without the program name: the baseline run file's path, then the new
-# one's. Print the gate's message and return its code, with the default threshold. If argv does not hold exactly two
-# arguments, print a line containing the word "usage" and return 2. If either file does not exist, print a line
-# containing that file's path and return 2.
+# EXERCISE-TODO: main(argv): argv is the command-line arguments without the program name: the baseline run file's path,
+# then the new one's. Print the gate's message and return its code, with the default threshold. If argv does not hold
+# exactly two arguments, print a line containing the word "usage" and return 2. If either file does not exist, print a
+# line containing that file's path and return 2.
 def main(argv: list[str]) -> int:
     raise NotImplementedError
 
