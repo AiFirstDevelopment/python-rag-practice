@@ -16,7 +16,7 @@ them to solve one of its tests again from memory in the chat, with no lesson, th
 to the next exercise. Set `current`, mark it `started`, and set `"taught": true` on it. If every exercise is passed,
 go to the MCP server below.
 
-### After the capstone: the MCP server
+### After the final project (50): the MCP server
 
 `examples/mcp-server/` is a worked example, not an exercise. When all fifty are passed and `progress.json`'s
 `"examples"` does not mark `"mcp-server"` done, set `current` to `"mcp-server"` and open its `README.md` in the
