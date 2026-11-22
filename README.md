@@ -36,7 +36,7 @@ you earlier ones' code as starting points, so don't open exercises ahead of the 
 
 ## The path
 
-Fifty exercises, each matched to a chapter of the course:
+Fifty-four exercises, each matched to a chapter of the course (the MCP module goes past it):
 
 | Module | Exercises | What you write |
 |---|---|---|
@@ -49,13 +49,15 @@ Fifty exercises, each matched to a chapter of the course:
 | 7. The pipeline | 30-39 | chunking, BM25, vector search, rank fusion, reranking, widening, the prompt, "I don't know", the whole pipeline |
 | 8. The eval harness | 40-46 | the golden set, retrieval recall, required facts, pass / fail / review, concurrent runs, gain or noise, a CI gate |
 | 9. A FastAPI service | 47-49 | a FastAPI endpoint, an app you can test, a run report |
-| 10. Final project | 50 | a pipeline over new documents, from nothing, graded by its golden set |
+| 10. Pipeline project | 50 | a pipeline over new documents, from nothing, graded by its golden set |
+| 11. An MCP server | 51-54 | your documents as an MCP server: a tool, resources and prompts, tools that change things, one server from two with an audit log |
 
 Every model call in the tests goes to a fake, so the whole path runs offline and free.
 
-## An MCP server for the pipeline
+## The full MCP server
 
-[`examples/mcp-server/`](examples/mcp-server/) is a complete MCP server, built with FastMCP, that makes the final project's
+Module 11 builds an MCP server one piece at a time. [`examples/mcp-server/`](examples/mcp-server/) is the whole thing,
+built with FastMCP, that makes the pipeline project's
 documents and a live booking system available to Claude Code: tools, resources and prompts, stdio and HTTP, sign-in
 and per-user access, confirmations, long jobs, paging and an audit log, every part commented with why it is built
-that way. Add it to Claude Code with one line (its README) and try it, or read it after the final project.
+that way. Add it to Claude Code with one line (its README) and try it, or read it after exercise 54.

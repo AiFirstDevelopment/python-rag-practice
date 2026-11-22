@@ -1,7 +1,7 @@
 # An MCP server for the pipeline
 
 A complete MCP server, built with [FastMCP](https://gofastmcp.com), that makes a document search and a live booking
-system available to Claude Code. It runs over the final project's documents (Brackwater Ferry's fares, vehicles, pets
+system available to Claude Code. It runs over the pipeline project's documents (Brackwater Ferry's fares, vehicles, pets
 and weather rules) and a small in-memory booking store, so it works offline with no key.
 
 It is a worked example to read and run, not an exercise. The comments explain the reasons behind the code as much

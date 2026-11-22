@@ -30,7 +30,7 @@ exercises/NN-slug/README.md        the task
 exercises/NN-slug/solution.py      your file (starts as the starter; 50 has none, you create pipeline.py)
 exercises/NN-slug/test_*.py        the tests the tutor runs
 exercises/17-20/implementations/   module 4: the correct and broken code your tests are graded against
-exercises/50-final-project/corpus/ the final project's documents, with its golden.jsonl
+exercises/50-pipeline-project/corpus/ the pipeline project's documents, with its golden.jsonl
 progress.json                      your record (gitignored)
 pyproject.toml, uv.lock            Python 3.12, pytest, the same packages as the course
 ```
@@ -63,8 +63,11 @@ Each module matches a chapter of the course, so a viewer can watch the chapter a
    fail CI on a real drop.
 9. **From script to service** (ch. 12-13), 3: a FastAPI endpoint for the pipeline; testing it; a run report (the
    summary the course's notebook explores, as functions).
-10. **Final project**, 1: the pipeline over a new set of documents, with no starter code, graded by its golden set (a
+10. **Pipeline project**, 1: the pipeline over a new set of documents, with no starter code, graded by its golden set (a
     harness of your own is suggested, not graded).
+11. **An MCP server**, 4: the pipeline project's documents as an MCP server with FastMCP: a search tool; resources
+    and a prompt; tools that change a booking, with annotations; two servers mounted as one, with an audit log. The
+    full server is `examples/mcp-server/`.
 
 ## Is it worth building (2026-11-21)
 
@@ -76,7 +79,7 @@ not the skill file: about 50 exercises, each a README, a starter and tests.
 
 1. The skill, the layout, `/practice` and `/check`, with module 1 (7 exercises). Joel works through it and says
    whether the hint ladder feels right.
-2. The other modules (built: all 50 exercises are in `exercises/`).
+2. The other modules (built: all 54 exercises are in `exercises/`).
 3. The public repository (Joel creates it; a session cannot), a README with how to install, and a Short.
 4. An MCP server over the pipeline as a worked example (`examples/mcp-server/`, FastMCP, 2026-11-22): tools,
    resources, prompts, transports, sign-in, confirmations, long jobs; tested through an in-memory client and HTTP.
