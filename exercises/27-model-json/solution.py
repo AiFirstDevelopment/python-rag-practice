@@ -1,5 +1,5 @@
 # Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 22.
-# Write it there, save, then type /check in the Claude chat.
+# Each EXERCISE-TODO comment below is one piece to write. Save, then type /check in the Claude chat.
 import json
 
 from pydantic import BaseModel
@@ -21,16 +21,16 @@ def prompt(question: str, passages: list[str]) -> str:
 
 # ---- Yours ----
 
-# strip_fence(text): return the text without whitespace at the ends and, if it is wrapped in a Markdown code fence
-# (a first line starting with three backticks, with or without the word json, and a last line of three backticks),
-# without those two lines. Text with no fence comes back stripped, otherwise unchanged.
+# EXERCISE-TODO: strip_fence(text): return the text without whitespace at the ends and, if it is wrapped in a Markdown
+# code fence (a first line starting with three backticks, with or without the word json, and a last line of three
+# backticks), without those two lines. Text with no fence comes back stripped, otherwise unchanged.
 #   strip_fence('```json\n{"ranked": [2, 0]}\n```')  ->  '{"ranked": [2, 0]}'
 def strip_fence(text: str) -> str:
     raise NotImplementedError
 
 
-# parse_ranking(text, pool_size): return the list of passage numbers in the reply, in the reply's order, repeats
-# dropped (the first one stays). Accept a fenced reply. Raise ValueError when:
+# EXERCISE-TODO: parse_ranking(text, pool_size): return the list of passage numbers in the reply, in the reply's order,
+# repeats dropped (the first one stays). Accept a fenced reply. Raise ValueError when:
 #   the text is not JSON;
 #   the JSON is not an object with the key "ranked";
 #   "ranked" is not a list, or an item in it is not a whole number ("two", 1.5);
@@ -42,9 +42,9 @@ def parse_ranking(text: str, pool_size: int) -> list[int]:
     raise NotImplementedError
 
 
-# rerank(client, question, passages, keep): return keep passage positions, best first. With no passages return [] and
-# make no call. Otherwise make one call, client.messages.create(model=RERANK_MODEL, max_tokens=1024, system=RULES,
-# messages=[...]), with one user message whose content is prompt(question, passages), and parse
+# EXERCISE-TODO: rerank(client, question, passages, keep): return keep passage positions, best first. With no passages
+# return [] and make no call. Otherwise make one call, client.messages.create(model=RERANK_MODEL, max_tokens=1024,
+# system=RULES, messages=[...]), with one user message whose content is prompt(question, passages), and parse
 # response.content[0].text with parse_ranking. The model's choice goes first, then the positions it did not name in
 # their original order, and the list is cut to keep. If parse_ranking raises ValueError, return the first keep
 # positions in their original order.

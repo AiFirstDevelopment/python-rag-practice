@@ -1,5 +1,5 @@
 # Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 51.
-# Write it there, save, then type /check in the Claude chat.
+# Each EXERCISE-TODO comment below is one piece to write. Save, then type /check in the Claude chat.
 import asyncio
 from collections.abc import Awaitable, Callable
 from dataclasses import dataclass, field
@@ -50,9 +50,9 @@ class Result:
 
 # ---- Yours ----
 
-# run_cases(cases, pipeline, limit=4): async; return one Result per case, in the order of cases whichever finished
-# first. Call `await pipeline(question)` once per case with its question. Never more than limit calls in flight at
-# once, and they do run concurrently: with more cases than limit, exactly limit are in flight at the busiest moment.
+# EXERCISE-TODO: run_cases(cases, pipeline, limit=4): async; return one Result per case, in the order of cases whichever
+# finished first. Call `await pipeline(question)` once per case with its question. Never more than limit calls in flight
+# at once, and they do run concurrently: with more cases than limit, exactly limit are in flight at the busiest moment.
 # For a reply, status and missing come from score_answer(case, reply) and error is None. If the pipeline raises for a
 # case, that result has status "fail", missing empty and error set to str(exception); the other cases still run. No
 # cases: an empty list.

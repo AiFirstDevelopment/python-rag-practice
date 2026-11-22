@@ -1,5 +1,5 @@
 # Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 208.
-# Write it there, save, then type /check in the Claude chat.
+# Each EXERCISE-TODO comment below is one piece to write. Save, then type /check in the Claude chat.
 import json
 import math
 import re
@@ -207,9 +207,9 @@ async def answer(client, question: str, passages: list[Passage]) -> str:
 
 # ---- Yours ----
 
-# ask(documents, question, embed, client), async: documents is a dict from a file name to the list of that file's page
-# texts; embed is a function from a text to its vector; client is the model client. Return (reply, passages): the
-# answer's text and the list of Passage the model answered from. The steps, in order:
+# EXERCISE-TODO: ask(documents, question, embed, client), async: documents is a dict from a file name to the list of
+# that file's page texts; embed is a function from a text to its vector; client is the model client. Return (reply,
+# passages): the answer's text and the list of Passage the model answered from. The steps, in order:
 #   1. Chunk every file with chunk_file, in the dict's order, into one list. No chunks at all (no documents, or only
 #      empty pages): return (DONT_KNOW, []) at once, with no model call.
 #   2. Keyword search: bm25 over the chunks, limit POOL * 2.

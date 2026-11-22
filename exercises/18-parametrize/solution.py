@@ -1,11 +1,12 @@
-# Your task is in README.md in this folder. Write your code here, save, then type /check in the Claude chat.
+# Your task is in README.md. Each EXERCISE-TODO comment below is one piece to write.
+# Save, then type /check in the Claude chat.
 # Your tests go in this file. Keep these imports: the grader decides which implementation of scores it finds.
 import pytest
 
 from scores import parse_score
 
 
-# Your tests: replace this placeholder with tests for parse_score. At least one test must use
+# EXERCISE-TODO: Your tests: replace this placeholder with tests for parse_score. At least one test must use
 # @pytest.mark.parametrize (a table of cases passed to one test function). Against the correct scores every test must
 # pass; against each of the five broken versions at least one must fail. Behaviors to cover:
 #   parse_score(text) returns the number in text as a float; spaces around the number are allowed.

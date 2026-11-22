@@ -1,5 +1,5 @@
 # Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 26.
-# Write it there, save, then type /check in the Claude chat.
+# Each EXERCISE-TODO comment below is one piece to write. Save, then type /check in the Claude chat.
 from dataclasses import dataclass
 
 # ---- Given: the Chunk from exercise 31, the Passage and the budget. Do not change them. ----
@@ -25,12 +25,12 @@ WIDEN_CHARS = 10_800
 
 # ---- Yours ----
 
-# widen(given, everything, budget=WIDEN_CHARS): given is the chosen chunks, best first; everything is every chunk of
-# every file. A chunk's neighbours are the chunks with the same file and seq - 1 and seq + 1. Return a list of Passage.
-# Step 1: go through given in order; for each chunk look at the chunk before it, then after it, and take it unless it
-# does not exist (another file's chunk is never a neighbour), it is a given chunk or already taken, or its text would
-# bring the total length of the neighbours taken so far over budget (given chunks never count). A neighbour that does
-# not fit is skipped and the walk goes on.
+# EXERCISE-TODO: widen(given, everything, budget=WIDEN_CHARS): given is the chosen chunks, best first; everything is
+# every chunk of every file. A chunk's neighbours are the chunks with the same file and seq - 1 and seq + 1. Return a
+# list of Passage. Step 1: go through given in order; for each chunk look at the chunk before it, then after it, and
+# take it unless it does not exist (another file's chunk is never a neighbour), it is a given chunk or already taken, or
+# its text would bring the total length of the neighbours taken so far over budget (given chunks never count). A
+# neighbour that does not fit is skipped and the walk goes on.
 # Step 2: go through given in order again, skipping a chunk already inside an earlier passage. Its passage is the
 # longest unbroken run of seq numbers around it, in its file, where every chunk is given or taken: the file, the page of
 # the run's first chunk as first_page, the page of its last as last_page, and the texts joined with "\n".
