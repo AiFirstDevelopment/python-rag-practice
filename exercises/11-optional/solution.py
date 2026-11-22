@@ -1,3 +1,4 @@
+# Your task is in README.md in this folder. Write your code here, save, then type /check in the Claude chat.
 def find_chunk(chunks: list[dict], file: str, page: int) -> dict | None:
     raise NotImplementedError
 

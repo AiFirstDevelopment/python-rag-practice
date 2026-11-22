@@ -36,7 +36,8 @@ missing, add it back.
 
 The lesson (Markdown; see `lessons/01-strings.md` if it exists for the shape):
 
-- `# ` the exercise name. One short paragraph: what the code must do, from the README.
+- `# ` the exercise name, then `## The task`: the README's task and examples (not the "You will use" line), and a
+  link to it: `[The task, any time: exercises/NN-slug/README.md](../exercises/NN-slug/README.md)`.
 - The file it belongs in, in bold (`solution.py`; `cleaning.py` for 12; `pipeline.py` for 50; in module 4, 17-20,
   the example is *tests*, not code).
 - The full worked solution in a plain fenced ` ```python ` block. No highlights. Each line that carries a lesson
@@ -49,8 +50,12 @@ The lesson (Markdown; see `lessons/01-strings.md` if it exists for the shape):
 
 ## 3. Hand over
 
-In the chat, one line saying the lesson is open in a tab, then ask: "Ready to write it
+In the chat, one line saying the lesson is open in a tab and that the task stays at
+`exercises/NN-slug/README.md` (clickable; the top line of their file points there too), then ask: "Ready to write it
 yourself?" Do not paste the solution in the chat.
+
+If they come back to an exercise already `taught` and not passed (or say they forgot what it was), open its
+`README.md` with `code -r` and say in one line what to write; offer to reopen the lesson.
 
 ## 4. Score their attempt
 
