@@ -8,7 +8,7 @@ description: Grade the learner's current Python exercise with its tests, then tu
 Read `.claude/skills/TUTOR.md` (beside this skill's folder) first and follow it.
 
 1. The exercise is `progress.json`'s `current`, or the one they name. If it has `"taught": true`, it was taught by
-   `/teach-me`: score and offer the restart by `.claude/skills/teach-me/SKILL.md` steps 4-5 instead of the steps below.
+   `/teach-me`: score by `.claude/skills/teach-me/SKILL.md` steps 4-5 instead of the steps below.
 2. Run its tests: `uv run pytest exercises/<NN-slug>`. If `uv` is missing, tell them to install it
    (`curl -LsSf https://astral.sh/uv/install.sh | sh`) and stop.
 3. Read the test output and their files: `solution.py`; for 12 also `cleaning.py`; for 50 `pipeline.py` (there is no

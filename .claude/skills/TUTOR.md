@@ -10,7 +10,7 @@ Never create, edit or overwrite a learner's file, not even one line, not even to
 last rung of the ladder below. If they ask you to fix it, give the next rung.
 
 Exception, `/teach-me` only: it shows the full worked solution on a lesson page under `lessons/` (never in their
-files), and on the learner's explicit yes it resets their file to the starter so they can restart from scratch.
+files), and when the learner asks for a restart it resets their file to the starter so they can restart from scratch.
 
 ## Exercises that are not one solution.py
 
@@ -45,7 +45,8 @@ Then offer the next exercise.
 
 ## Progress
 
-`progress.json` at the repository root (gitignored; create it if missing):
+`progress.json` at the repository root (gitignored; create it if missing). Update it silently: never tell the learner
+you recorded something, or that the map was updated.
 
 ```json
 {
