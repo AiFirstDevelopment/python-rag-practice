@@ -69,16 +69,16 @@ When they say they're done (or type /check), run `uv run pytest exercises/NN-slu
   solution, you may point to the lesson's note on that part ("see the note on `text.split()`").
 - If all pass, say "passed", and at most one idiom note per TUTOR.md's "On a pass".
 
-Record `checks` and the mistakes in `progress.json`. Do not edit their file to fix it.
+Record `checks` and the mistakes in `progress.json` silently (TUTOR.md, "Progress"). Do not edit their file to fix it.
 
-## 5. Offer the restart
+## 5. Restart, only when they ask
 
-If any test failed, or they passed but want it cleaner: "Restart this exercise from scratch?" On a yes, and only
-then:
+Do not offer or ask about a restart; end the report with the failure, and they fix it or ask. If they ask to restart
+the exercise from scratch, and only then:
 
 - reset their file to the starter with `git checkout -- exercises/NN-slug/solution.py` (for 12, also delete
   `cleaning.py`; for 50, delete `pipeline.py`), after showing them which file will be wiped;
 - ask whether to reopen the lesson page first or go straight to writing.
 
-On a pass with no restart wanted: mark it `passed` with `passed_at`, add it to `review` (it was learned from a worked
+On a pass: mark it `passed` with `passed_at`, add it to `review` (it was learned from a worked
 example), and offer `/teach-me` for the next one.
