@@ -17,13 +17,24 @@ def fake_embed(text: str, size: int = 64) -> np.ndarray:
 
 # ---- Yours ----
 
+# normalize_rows(matrix): return a new two-dimensional array where every row has length 1. A row of all zeros stays
+# zeros (no nan). The array given is not changed.
 def normalize_rows(matrix: np.ndarray) -> np.ndarray:
     raise NotImplementedError
 
 
+# build_index(texts, embed): embed each text with embed(text) and return the normalized matrix, one row per text, in
+# order: shape (len(texts), d).
+#   build_index(["returns are accepted within 30 days", "shipping takes five days", "gift cards never expire"],
+#               fake_embed).shape  ->  (3, 64)
 def build_index(texts: list[str], embed) -> np.ndarray:
     raise NotImplementedError
 
 
+# search(index, query, k): index is a matrix from build_index; query is a one-dimensional vector of any length
+# (normalize it here). Return the k best rows as a list of (position, score) tuples, a Python int and float, best
+# first; equal scores in position order; all the rows if k is larger than their number. Compute the scores with one
+# matrix-vector product, no Python loop over the rows.
+#   search(index, fake_embed("how long does shipping take"), 1)  ->  [(1, 0.2236...)]   (index from the example above)
 def search(index: np.ndarray, query: np.ndarray, k: int) -> list[tuple[int, float]]:
     raise NotImplementedError

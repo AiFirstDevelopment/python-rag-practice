@@ -34,9 +34,18 @@ def build_request(question: str, passages: list[Passage]) -> dict:
 
 # ---- Yours ----
 
+# answer(client, question, passages), async: return the reply to show. With no passages, return DONT_KNOW and do not
+# call the model. Otherwise call await client.messages.create(...) once with build_request(question, passages). If the
+# response's stop_reason is "refusal", return DECLINED without reading the content. Otherwise return the reply's text,
+# response.content[0].text.
 async def answer(client, question: str, passages: list[Passage]) -> str:
     raise NotImplementedError
 
 
+# is_fallback(reply): return True when any phrase of FALLBACK is in the reply, in any case, anywhere in it; otherwise
+# False. It only looks for the phrases; it does not judge the answer.
+#   is_fallback("I don't know.")                                   ->  True
+#   is_fallback("The policy does not say when the store opens.")  ->  True
+#   is_fallback("Sale items can be returned within 14 days.")      ->  False
 def is_fallback(reply: str) -> bool:
     raise NotImplementedError
