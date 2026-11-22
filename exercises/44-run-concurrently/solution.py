@@ -1,4 +1,5 @@
-# Your task is in README.md in this folder. Write your code here, save, then type /check in the Claude chat.
+# Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 51.
+# Write it there, save, then type /check in the Claude chat.
 import asyncio
 from collections.abc import Awaitable, Callable
 from dataclasses import dataclass, field
@@ -47,7 +48,7 @@ class Result:
     error: str | None = None                      # the exception's message when the pipeline raised
 
 
-# Yours.
+# ---- Yours ----
 
 # run_cases(cases, pipeline, limit=4): async; return one Result per case, in the order of cases whichever finished
 # first. Call `await pipeline(question)` once per case with its question. Never more than limit calls in flight at

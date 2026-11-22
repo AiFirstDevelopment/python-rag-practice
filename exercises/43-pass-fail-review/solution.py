@@ -1,4 +1,5 @@
-# Your task is in README.md in this folder. Write your code here, save, then type /check in the Claude chat.
+# Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 37.
+# Write it there, save, then type /check in the Claude chat.
 from typing import Literal
 
 from pydantic import BaseModel
@@ -33,7 +34,7 @@ def missing_facts(facts: list[Fact], answer: str) -> list[str]:
     return [f.fact for f in facts if not any(m.lower() in text for m in f.match)]
 
 
-# Yours.
+# ---- Yours ----
 
 # fell_back(reply): return True when the reply contains any of the FALLBACK phrases, whatever the case of the reply.
 def fell_back(reply: str) -> bool:
