@@ -10,8 +10,11 @@ Read `.claude/skills/TUTOR.md` (beside this skill's folder) first. Its voice, pr
 
 ## 1. Pick the exercise
 
-The one they name, or `progress.json`'s `current`, or the next by TUTOR.md's "Order". Set `current`, mark it
-`started`, and set `"taught": true` on it.
+The one they name; else `progress.json`'s `current` if it is started and not passed (say so: it is still the one
+they are on); else the next by TUTOR.md's "Order", which after every third pass puts a `review` exercise first: ask
+them to solve one of its tests again from memory in the chat, with no lesson, then drop it from `review` and go on
+to the next exercise. Set `current`, mark it `started`, and set `"taught": true` on it. If every exercise is passed,
+say the path is complete and offer what is left in `review` as practice.
 
 ## 2. Build the lesson page
 
@@ -62,4 +65,4 @@ then:
 - ask whether to reopen the lesson page first or go straight to writing.
 
 On a pass with no restart wanted: mark it `passed` with `passed_at`, add it to `review` (it was learned from a worked
-example), and offer `/teach-me` or `/practice` for the next one.
+example), and offer `/teach-me` for the next one.

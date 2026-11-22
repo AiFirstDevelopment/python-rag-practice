@@ -7,8 +7,10 @@ the code; this repository makes you write it.
 
 ## How it works
 
-- `/practice` in Claude Code (VS Code or the terminal) opens the next exercise: what to write, in a few lines, and a
-  starter file with the function signatures.
+- `/teach-me` in Claude Code (VS Code or the terminal) opens the next exercise and teaches it from a worked example:
+  a lesson in a VS Code tab, which the learner closes before writing the code from memory in the starter file.
+  (`/practice`, which gave the task without a lesson, was replaced by it on 2026-11-22.)
+- `/progress` shows the map of passed exercises.
 - `/check` runs that exercise's tests (pytest). The tests decide pass or fail, never Claude's opinion.
 - On a fail, the tutor leads instead of fixing: first a question about the failing test, then a hint, then the
   concept, and the solution only when you ask for it. It never edits your file.
@@ -21,7 +23,8 @@ the code; this repository makes you write it.
 
 ```
 .claude/skills/TUTOR.md            the tutor's rules: order, the hint ladder, never write the answer, progress
-.claude/skills/practice/SKILL.md   /practice: opens the next exercise
+.claude/skills/teach-me/SKILL.md   /teach-me: opens the next exercise as a worked-example lesson
+.claude/skills/progress/          /progress: the progress map (progress_map.py)
 .claude/skills/check/SKILL.md      /check: runs its tests and tutors a failure
 exercises/NN-slug/README.md        the task
 exercises/NN-slug/solution.py      your file (starts as the starter; 50 has none, you create pipeline.py)

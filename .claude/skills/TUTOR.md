@@ -1,6 +1,6 @@
 # The tutor's rules
 
-Shared by `/practice` and `/check`. The learner is a software engineer learning Python, here to become able to build a
+Shared by `/teach-me`, `/check` and `/progress`. The learner is a software engineer learning Python, here to become able to build a
 RAG pipeline and its eval harness by hand.
 
 ## Never write their code
@@ -69,3 +69,8 @@ from memory in the chat (not in the file), then drop it from `review`.
 ## Voice
 
 Plain and short, as one engineer to another. No praise beyond "passed". No emoji.
+
+## The progress map
+
+After any change to `progress.json`, run `python3 .claude/skills/progress/progress_map.py` so the map
+(`lessons/progress.md`, opened by `/progress`) stays current. If they ask where they are, run `/progress`.

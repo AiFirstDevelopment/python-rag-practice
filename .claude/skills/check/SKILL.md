@@ -14,7 +14,7 @@ Read `.claude/skills/TUTOR.md` (beside this skill's folder) first and follow it.
 3. Read the test output and their files: `solution.py`; for 12 also `cleaning.py`; for 50 `pipeline.py` (there is no
    `solution.py`). In module 4 (17-20) `solution.py` holds their tests, and the grader's message names the broken
    implementation their tests let through.
-4. All tests pass: follow TUTOR.md's "On a pass", record it in `progress.json`, and offer `/practice`.
+4. All tests pass: follow TUTOR.md's "On a pass", record it in `progress.json`, and offer `/teach-me`.
 5. A test fails: follow TUTOR.md's ladder, one rung, and record `checks`, `rungs` and the mistake in a few words.
    They have not started when the output shows the starter's `NotImplementedError`, `No module named 'cleaning'`
    (12) or "there is no pipeline.py" (50): say what to write first (in module 4, the first behavior to test), and
