@@ -16,9 +16,10 @@ them to solve one of its tests again from memory in the chat, with no lesson, th
 to the next exercise. Set `current`, mark it `started`, and set `"taught": true` on it. If every exercise is passed,
 go to the MCP server below.
 
-### After the final project (50): the MCP server
+### After the last exercise (54): the full MCP server
 
-`examples/mcp-server/` is a worked example, not an exercise. When all fifty are passed and `progress.json`'s
+`examples/mcp-server/` is the full server that module 11 (51-54) builds toward: a worked example, not an
+exercise. When every exercise is passed and `progress.json`'s
 `"examples"` does not mark `"mcp-server"` done, set `current` to `"mcp-server"` and open its `README.md` in the
 preview (`code -r examples/mcp-server/README.md`, then tell them to press Cmd+Shift+V if it shows the source). Walk
 them through adding it to Claude Code and asking it one question from the README; once a tool call from it has
