@@ -54,8 +54,9 @@ The lesson (Markdown; see `lessons/01-strings.md` if it exists for the shape):
 
 ## 3. Hand over
 
-In the chat, one line saying the lesson is open in a tab, then ask: "Ready to write it
-yourself?" Do not paste the solution in the chat.
+The open lesson tab is the hand-over: say nothing about it in the chat, ask nothing, and do not paste the solution.
+If they were on `main`, create and switch to a local `practice` branch before opening the lesson (their work stays
+off `main`) and say only: "Created the practice branch."
 
 If they come back to an exercise already `taught` and not passed, `/teach-me` teaches it again: reopen its lesson (rebuild it if `lessons/NN-slug.md` is missing; it starts with the task) and hand over as above.
 
