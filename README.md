@@ -4,6 +4,9 @@ Graded Python exercises, with a tutor in Claude Code, from no Python to building
 by hand. The practice half of [python-essentials-for-rag](https://github.com/AiFirstDevelopment/python-essentials-for-rag):
 the course shows the code, this makes you write it.
 
+Ready to be tested? [The Python readiness check](https://joelstevick.com/learn/python-assessment): a timed Python
+coding test Claude writes for your level, scored by hidden tests.
+
 ## Start
 
 ```bash
