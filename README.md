@@ -44,3 +44,10 @@ Fifty exercises, each matched to a chapter of the course:
 | 10. Capstone | 50 | a pipeline over new documents, from nothing, graded by its golden set |
 
 Every model call in the tests goes to a fake, so the whole path runs offline and free.
+
+## An MCP server for the pipeline
+
+[`examples/mcp-server/`](examples/mcp-server/) is a complete MCP server, built with FastMCP, that makes the capstone's
+documents and a live booking system available to Claude Code: tools, resources and prompts, stdio and HTTP, sign-in
+and per-user access, confirmations, long jobs, paging and an audit log, every part commented with why it is built
+that way. Add it to Claude Code with one line (its README) and try it, or read it after the capstone.
