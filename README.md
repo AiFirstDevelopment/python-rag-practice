@@ -42,7 +42,7 @@ Fifty exercises, each matched to a chapter of the course:
 | 6. Async and a model | 25-29 | a model call and its cost, messages, JSON from a model, gather with a limit, retries |
 | 7. The pipeline | 30-39 | chunking, BM25, vector search, rank fusion, reranking, widening, the prompt, "I don't know", the whole pipeline |
 | 8. The eval harness | 40-46 | the golden set, retrieval recall, required facts, pass / fail / review, concurrent runs, gain or noise, a CI gate |
-| 9. Script to service | 47-49 | a FastAPI endpoint, an app you can test, a run report |
+| 9. A FastAPI service | 47-49 | a FastAPI endpoint, an app you can test, a run report |
 | 10. Capstone | 50 | a pipeline over new documents, from nothing, graded by its golden set |
 
 Every model call in the tests goes to a fake, so the whole path runs offline and free.

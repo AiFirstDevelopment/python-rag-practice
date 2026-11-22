@@ -14,7 +14,16 @@ The one they name; else `progress.json`'s `current` if it is started and not pas
 they are on); else the next by TUTOR.md's "Order", which after every third pass puts a `review` exercise first: ask
 them to solve one of its tests again from memory in the chat, with no lesson, then drop it from `review` and go on
 to the next exercise. Set `current`, mark it `started`, and set `"taught": true` on it. If every exercise is passed,
-say the path is complete and offer what is left in `review` as practice.
+go to the MCP server below.
+
+### After the capstone: the MCP server
+
+`examples/mcp-server/` is a worked example, not an exercise. When all fifty are passed and `progress.json`'s
+`"examples"` does not mark `"mcp-server"` done, set `current` to `"mcp-server"` and open its `README.md` in the
+preview (`code -r examples/mcp-server/README.md`, then tell them to press Cmd+Shift+V if it shows the source). Walk
+them through adding it to Claude Code and asking it one question from the README; once a tool call from it has
+answered, set `"examples": {"mcp-server": "done"}` and run the progress map. Then say the path is complete and offer
+what is left in `review` as practice.
 
 ## 2. Build the lesson page
 
