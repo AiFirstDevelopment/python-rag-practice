@@ -23,9 +23,11 @@ Then in Claude Code:
 
 - `/teach-me` opens the next exercise and teaches it from a worked example: a lesson opens in a VS Code tab, you
   close it and write the code from memory.
-- `/check` runs its tests, scores your attempt, shows each mistake and the line that caused it, and offers a restart
-  from a blank file until it passes. It never edits your code.
+- `/check` runs its tests, scores your attempt, shows each mistake and the line that caused it. Ask it to restart an
+  exercise from a blank file. It never edits your code.
 - `/progress` shows your map: one cell per exercise, a row per module, the passed ones lit.
+- `/reset-all-exercises` wipes all your work (solutions, progress, lessons) to start the course over, after you
+  confirm.
 
 In each starter file, search for `EXERCISE-TODO`: every piece you write has one, with its requirements.
 Each exercise's task is in its folder's `README.md` (the first line of its starter file says so), and
