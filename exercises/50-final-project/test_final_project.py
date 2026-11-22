@@ -86,8 +86,8 @@ class FakeClient:
 def pipeline():
     path = HERE / "pipeline.py"
     if not path.exists():
-        pytest.fail("there is no pipeline.py in exercises/50-capstone yet: see the README")
-    spec = importlib.util.spec_from_file_location("capstone_pipeline", path)
+        pytest.fail("there is no pipeline.py in exercises/50-final-project yet: see the README")
+    spec = importlib.util.spec_from_file_location("final_project_pipeline", path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module

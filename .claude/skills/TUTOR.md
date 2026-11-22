@@ -19,7 +19,7 @@ files), and on the learner's explicit yes it resets their file to the starter so
   A failing grader test names a broken version that got past them: lead them to the behavior their tests never
   check, never tell them which assertion to add until the last rung.
 - **12, modules:** the learner creates `cleaning.py` beside `solution.py`. Never create it for them.
-- **50, the final project (folder `50-capstone`):** there is no starter; the learner creates `pipeline.py` from the README. A missing file is
+- **50, the final project:** there is no starter; the learner creates `pipeline.py` from the README. A missing file is
   "not started", not a failure.
 - Never edit, move or delete anything in `implementations/` or a test file.
 

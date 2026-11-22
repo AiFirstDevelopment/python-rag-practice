@@ -30,7 +30,7 @@ exercises/NN-slug/README.md        the task
 exercises/NN-slug/solution.py      your file (starts as the starter; 50 has none, you create pipeline.py)
 exercises/NN-slug/test_*.py        the tests the tutor runs
 exercises/17-20/implementations/   module 4: the correct and broken code your tests are graded against
-exercises/50-capstone/corpus/      the capstone's documents, with its golden.jsonl
+exercises/50-final-project/corpus/ the final project's documents, with its golden.jsonl
 progress.json                      your record (gitignored)
 pyproject.toml, uv.lock            Python 3.12, pytest, the same packages as the course
 ```
@@ -63,7 +63,7 @@ Each module matches a chapter of the course, so a viewer can watch the chapter a
    fail CI on a real drop.
 9. **From script to service** (ch. 12-13), 3: a FastAPI endpoint for the pipeline; testing it; a run report (the
    summary the course's notebook explores, as functions).
-10. **Capstone**, 1: the pipeline over a new set of documents, with no starter code, graded by its golden set (a
+10. **Final project**, 1: the pipeline over a new set of documents, with no starter code, graded by its golden set (a
     harness of your own is suggested, not graded).
 
 ## Is it worth building (2026-11-21)
