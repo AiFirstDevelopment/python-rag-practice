@@ -30,8 +30,9 @@ what is left in `review` as practice.
 Read the exercise's `README.md` and its tests. Write a worked solution yourself and verify it passes the tests
 (in the scratchpad, never in their file). Then write the lesson to `lessons/NN-slug.md` (gitignored, never inside
 `exercises/`) and open it in VS Code together with the task, as two tabs, the lesson in front:
-`"/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" -r exercises/NN-slug/README.md
-lessons/NN-slug.md` (if not at that path, try `which code`). `.vscode/settings.json` maps `**/lessons/*.md` to
+run `code -r exercises/NN-slug/README.md`, then `code -r lessons/NN-slug.md` as a second command so the lesson is
+the tab in front (`code` is `"/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code"`; if not there, try
+`which code`). `.vscode/settings.json` maps `**/lessons/*.md` to
 VS Code's built-in Markdown preview, so the tab shows only the rendered lesson, never the source. If that setting is
 missing, add it back.
 
@@ -47,7 +48,10 @@ The lesson (Markdown; see `lessons/01-strings.md` if it exists for the shape):
 - Under the code, one note per number, headed by the number in bold and the bit of code it is about
   (`` **①** `text.split()`: ``): what it does and the Python idea behind it, two or three sentences. Plain
   engineer-to-engineer voice.
-- A rule, then: "**Close this page and write it from memory in `solution.py`. When you are done, save it and type `/check` in the Claude chat.**"
+- A rule, then: "**Close this page and write it from memory: [open your solution.py](../exercises/NN-slug/solution.py)**
+  (blank, or your last draft if you started). When you are done, save it and type `/check` in the Claude chat." Link
+  the file they write (`cleaning.py` for 12, `pipeline.py` for 50; create an empty one first if it does not exist, so
+  the link opens).
 
 ## 3. Hand over
 
