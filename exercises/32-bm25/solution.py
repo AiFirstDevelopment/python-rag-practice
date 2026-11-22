@@ -1,4 +1,5 @@
-# Your task is in README.md in this folder. Write your code here, save, then type /check in the Claude chat.
+# Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 28.
+# Write it there, save, then type /check in the Claude chat.
 import math
 import re
 from collections import Counter

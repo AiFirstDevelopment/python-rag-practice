@@ -1,4 +1,5 @@
-# Your task is in README.md in this folder. Write your code here, save, then type /check in the Claude chat.
+# Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 38.
+# Write it there, save, then type /check in the Claude chat.
 from dataclasses import dataclass
 from typing import Literal
 
@@ -34,7 +35,7 @@ class Passage:
     text: str
 
 
-# Yours.
+# ---- Yours ----
 
 # source_found(source, passages): return True when at least one passage is from the source's file and the source's
 # page is within that passage's pages (first_page and last_page included). The same page in another file does not count.

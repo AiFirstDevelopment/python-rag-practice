@@ -1,4 +1,5 @@
-# Your task is in README.md in this folder. Write your code here, save, then type /check in the Claude chat.
+# Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 12.
+# Write it there, save, then type /check in the Claude chat.
 from pydantic import BaseModel
 
 
@@ -8,7 +9,7 @@ class Fact(BaseModel):
     match: list[str]
 
 
-# Yours.
+# ---- Yours ----
 
 # has_fact(fact, answer): return True when at least one of the fact's match strings appears in the answer. Case does
 # not matter on either side, and it is a substring search ("tennis ball" matches "tennis balls"). A fact with an empty

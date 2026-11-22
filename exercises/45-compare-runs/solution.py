@@ -1,4 +1,5 @@
-# Your task is in README.md in this folder. Write your code here, save, then type /check in the Claude chat.
+# Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 14.
+# Write it there, save, then type /check in the Claude chat.
 from dataclasses import dataclass
 
 
@@ -10,7 +11,7 @@ class Comparison:
     net: int               # len(gained) - len(lost)
 
 
-# Yours.
+# ---- Yours ----
 
 # compare(before, after): each run is a dict from case id to status. Return a Comparison with gained (ids that did not
 # pass before and pass now) and lost (ids that passed before and do not now), both in alphabetical order, and net as

@@ -1,4 +1,5 @@
-# Your task is in README.md in this folder. Write your code here, save, then type /check in the Claude chat.
+# Your task is in README.md in this folder. The code at the top is given; yours goes under "Yours" at line 30.
+# Write it there, save, then type /check in the Claude chat.
 import json
 import sys
 from dataclasses import dataclass
@@ -26,7 +27,7 @@ def verdict(comparison: Comparison, threshold: int = 2) -> str:
     return "drop" if comparison.net <= -threshold else "noise"
 
 
-# Yours.
+# ---- Yours ----
 
 # load_run(path): return the run file at path (JSONL, one {"id": ..., "status": ...} a line) as a dict from id to
 # status. Blank lines are skipped.
