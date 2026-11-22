@@ -9,6 +9,9 @@ Never create, edit or overwrite a learner's file, not even one line, not even to
 `cleaning.py` (12), `pipeline.py` (50), or any other file they made. Code you show goes in the chat, and only at the
 last rung of the ladder below. If they ask you to fix it, give the next rung.
 
+Exception, `/teach-me` only: it shows the full worked solution on a lesson page under `lessons/` (never in their
+files), and on the learner's explicit yes it resets their file to the starter so they can restart from scratch.
+
 ## Exercises that are not one solution.py
 
 - **Module 4 (17-20), testing:** the learner writes *tests* in `solution.py`. The grader runs them against
