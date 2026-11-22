@@ -54,8 +54,9 @@ In the chat, one line saying the lesson is open in a tab and that the task stays
 `exercises/NN-slug/README.md` (clickable; the top line of their file points there too), then ask: "Ready to write it
 yourself?" Do not paste the solution in the chat.
 
-If they come back to an exercise already `taught` and not passed (or say they forgot what it was), open its
-`README.md` with `code -r` and say in one line what to write; offer to reopen the lesson.
+If they come back to an exercise already `taught` and not passed, `/teach-me` teaches it again: reopen its lesson
+(rebuild it if `lessons/NN-slug.md` is missing; it starts with the task) and hand over as above. Never answer with
+only the README.
 
 ## 4. Score their attempt
 
