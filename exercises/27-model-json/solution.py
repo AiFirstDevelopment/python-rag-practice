@@ -20,13 +20,36 @@ def prompt(question: str, passages: list[str]) -> str:
 
 # ---- Yours ----
 
+# strip_fence(text): return the text without whitespace at the ends and, if it is wrapped in a Markdown code fence
+# (a first line starting with three backticks, with or without the word json, and a last line of three backticks),
+# without those two lines. Text with no fence comes back stripped, otherwise unchanged.
+#   strip_fence('```json\n{"ranked": [2, 0]}\n```')  ->  '{"ranked": [2, 0]}'
 def strip_fence(text: str) -> str:
     raise NotImplementedError
 
 
+# parse_ranking(text, pool_size): return the list of passage numbers in the reply, in the reply's order, repeats
+# dropped (the first one stays). Accept a fenced reply. Raise ValueError when:
+#   the text is not JSON;
+#   the JSON is not an object with the key "ranked";
+#   "ranked" is not a list, or an item in it is not a whole number ("two", 1.5);
+#   a number is less than 0 or not less than pool_size.
+#   parse_ranking('{"ranked": [2, 0, 2]}', 4)    ->  [2, 0]
+#   parse_ranking('{"ranked": [7]}', 4)          ->  ValueError
+#   parse_ranking("Passage 2 is the best.", 4)   ->  ValueError
 def parse_ranking(text: str, pool_size: int) -> list[int]:
     raise NotImplementedError
 
 
+# rerank(client, question, passages, keep): return keep passage positions, best first. With no passages return [] and
+# make no call. Otherwise make one call, client.messages.create(model=RERANK_MODEL, max_tokens=1024, system=RULES,
+# messages=[...]), with one user message whose content is prompt(question, passages), and parse
+# response.content[0].text with parse_ranking. The model's choice goes first, then the positions it did not name in
+# their original order, and the list is cut to keep. If parse_ranking raises ValueError, return the first keep
+# positions in their original order.
+#   four passages, the model replies {"ranked": [2]}:
+#     rerank(client, "Can I return a sale item?", passages, keep=3)  ->  [2, 0, 1]
+#   the model replies "Passage 2 is the best.":
+#     rerank(client, "Can I return a sale item?", passages, keep=3)  ->  [0, 1, 2]
 def rerank(client, question: str, passages: list[str], keep: int = 3) -> list[int]:
     raise NotImplementedError

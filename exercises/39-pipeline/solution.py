@@ -206,5 +206,19 @@ async def answer(client, question: str, passages: list[Passage]) -> str:
 
 # ---- Yours ----
 
+# ask(documents, question, embed, client), async: documents is a dict from a file name to the list of that file's page
+# texts; embed is a function from a text to its vector; client is the model client. Return (reply, passages): the
+# answer's text and the list of Passage the model answered from. The steps, in order:
+#   1. Chunk every file with chunk_file, in the dict's order, into one list. No chunks at all (no documents, or only
+#      empty pages): return (DONT_KNOW, []) at once, with no model call.
+#   2. Keyword search: bm25 over the chunks, limit POOL * 2.
+#   3. Vector search: embed_chunks, then vector_search with limit POOL.
+#   4. fuse the two rankings (keyword first, then vector), keeping POOL chunks: the pool.
+#   5. rerank the pool with the client (it returns the KEEP best).
+#   6. widen those chunks with their neighbours, out of all the chunks: the passages.
+#   7. answer the question from the passages with the client: the reply.
+#   ask({"returns.txt": ["Returns are accepted within 30 days. Sale items are returned for store credit."]},
+#       "Can I return a sale item?", embed, client)
+#     ->  (the model's answer, [Passage("returns.txt", 1, 1, "Returns are accepted ...")])
 async def ask(documents: dict[str, list[str]], question: str, embed: Embed, client) -> tuple[str, list[Passage]]:
     raise NotImplementedError

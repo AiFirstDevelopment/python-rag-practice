@@ -49,5 +49,13 @@ class Reply(BaseModel):
 
 # ---- Yours ----
 
+# create_app(): return a FastAPI app whose lifespan calls load_chunks() once when the app starts and keeps the result
+# (on app.state, for example); no route calls load_chunks(). GET /health answers 200 with {"status": "ok", "chunks":
+# <the number of chunks loaded>}. POST /ask takes a Question, gets the model client from Depends(get_client) (not by
+# calling get_client() itself), awaits pipeline(question, chunks, client) with the chunks loaded at startup, and answers
+# 200 with a Reply. A body without question is 422.
+#   client.get("/health").json()  ->  {"status": "ok", "chunks": 3}
+#   client.post("/ask", json={"question": "Can I return a sale item?"}).json()
+#     ->  {"answer": "...", "sources": ["returns.txt, page 1", ...]}
 def create_app() -> FastAPI:
     raise NotImplementedError

@@ -48,5 +48,14 @@ class Result:
 
 
 # Yours.
+
+# run_cases(cases, pipeline, limit=4): async; return one Result per case, in the order of cases whichever finished
+# first. Call `await pipeline(question)` once per case with its question. Never more than limit calls in flight at
+# once, and they do run concurrently: with more cases than limit, exactly limit are in flight at the busiest moment.
+# For a reply, status and missing come from score_answer(case, reply) and error is None. If the pipeline raises for a
+# case, that result has status "fail", missing empty and error set to str(exception); the other cases still run. No
+# cases: an empty list.
+#   asyncio.run(run_cases(cases, pipeline, limit=2))[0]
+#     ->  Result(id="returns-01", status="pass", missing=[], error=None)
 async def run_cases(cases: list[Case], pipeline: Callable[[str], Awaitable[str]], limit: int = 4) -> list[Result]:
     raise NotImplementedError
