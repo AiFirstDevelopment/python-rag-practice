@@ -9,6 +9,10 @@ coding test Claude writes for your level, scored by hidden tests.
 
 ## Start
 
+Make your own copy first, so your solutions are yours to commit and push: press **Use this template** on GitHub
+(or fork it), then clone your copy. This repo's `main` takes changes only by pull request; it is the course, not a
+place for your answers.
+
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh   # uv, if you don't have it
 uv sync
