@@ -29,7 +29,8 @@ what is left in `review` as practice.
 
 Read the exercise's `README.md` and its tests. Write a worked solution yourself and verify it passes the tests
 (in the scratchpad, never in their file). Then write the lesson to `lessons/NN-slug.md` (gitignored, never inside
-`exercises/`) and open it in VS Code: `"/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" -r
+`exercises/`) and open it in VS Code together with the task, as two tabs, the lesson in front:
+`"/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" -r exercises/NN-slug/README.md
 lessons/NN-slug.md` (if not at that path, try `which code`). `.vscode/settings.json` maps `**/lessons/*.md` to
 VS Code's built-in Markdown preview, so the tab shows only the rendered lesson, never the source. If that setting is
 missing, add it back.
@@ -50,12 +51,12 @@ The lesson (Markdown; see `lessons/01-strings.md` if it exists for the shape):
 
 ## 3. Hand over
 
-In the chat, one line saying the lesson is open in a tab and that the task stays at
+In the chat, one line saying the task and the lesson are open in two tabs and that the task stays at
 `exercises/NN-slug/README.md` (clickable; the top line of their file points there too), then ask: "Ready to write it
 yourself?" Do not paste the solution in the chat.
 
-If they come back to an exercise already `taught` and not passed, `/teach-me` teaches it again: reopen its lesson
-(rebuild it if `lessons/NN-slug.md` is missing; it starts with the task) and hand over as above. Never answer with
+If they come back to an exercise already `taught` and not passed, `/teach-me` teaches it again: reopen the task and its lesson,
+both tabs (rebuild the lesson if `lessons/NN-slug.md` is missing; it starts with the task) and hand over as above. Never answer with
 only the README.
 
 ## 4. Score their attempt
