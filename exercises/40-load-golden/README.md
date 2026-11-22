@@ -1,5 +1,7 @@
 # 40. Load the golden set
 
+> **Your lesson:** [lessons/40-load-golden.md](../../lessons/40-load-golden.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 The golden set is the list of questions the harness asks the pipeline, each with what a right answer must hold and
 where in the documents it comes from. It is a JSONL file people edit by hand, so it will have typos. A typo must stop
 the run with the line number, not turn into a wrong score nobody notices.

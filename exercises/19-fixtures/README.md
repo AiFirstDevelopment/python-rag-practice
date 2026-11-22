@@ -1,5 +1,7 @@
 # 19. Fixtures
 
+> **Your lesson:** [lessons/19-fixtures.md](../../lessons/19-fixtures.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Code that reads and writes files needs files to test with, and a test must never leave them behind or depend on what
 another test wrote. A fixture is a function that prepares what a test needs; a test asks for it by naming it as a
 parameter, and pytest runs the fixture first and passes in what it returned. `tmp_path` is a fixture pytest already

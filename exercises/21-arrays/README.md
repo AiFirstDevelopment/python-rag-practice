@@ -1,5 +1,7 @@
 # 21. NumPy arrays
 
+> **Your lesson:** [lessons/21-arrays.md](../../lessons/21-arrays.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 An embedding model turns a piece of text into a list of a few hundred numbers, a vector. A pipeline keeps thousands
 of them and does arithmetic on all of them at once, which plain Python lists are too slow for. NumPy's array is the
 type every later exercise in this module works on.

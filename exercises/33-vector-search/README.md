@@ -1,5 +1,7 @@
 # 33. Vector search
 
+> **Your lesson:** [lessons/33-vector-search.md](../../lessons/33-vector-search.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Keyword search misses a chunk that says the same thing in other words. Vector search finds it: an embedding model
 turns each text into a vector, texts with a similar meaning get vectors pointing the same way, and the search is the
 cosine similarity from module 5, run over every chunk at once. It is the pipeline's second search.

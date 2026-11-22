@@ -1,5 +1,7 @@
 # 06. Exceptions
 
+> **Your lesson:** [lessons/06-exceptions.md](../../lessons/06-exceptions.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A reranker asks a model to score each passage from 0 to 1 and gets text back. Sometimes the text is not a number.
 The pipeline must notice, not crash and not guess.
 

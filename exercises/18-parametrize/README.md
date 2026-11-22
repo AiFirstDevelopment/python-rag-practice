@@ -1,5 +1,7 @@
 # 18. Parametrize
 
+> **Your lesson:** [lessons/18-parametrize.md](../../lessons/18-parametrize.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Most tests of a pipeline are the same check over a table of inputs: this text gives this score, that one is refused.
 Ten copies of one test function hide the table; one test with the table above it shows it, and pytest still reports
 each row as its own test, so a failure names the row.

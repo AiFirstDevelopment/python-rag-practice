@@ -1,5 +1,7 @@
 # 27. Parsing JSON a model returns, and refusing bad JSON
 
+> **Your lesson:** [lessons/27-model-json.md](../../lessons/27-model-json.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 The reranker asks a model which passages answer the question and wants numbers back, not prose:
 `{"ranked": [2, 0]}`. A model usually complies. Sometimes it wraps the JSON in a code fence, writes a sentence
 instead, or names a passage it was never given. Code that trusts the reply breaks in production; code that checks it

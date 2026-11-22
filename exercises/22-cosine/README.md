@@ -1,5 +1,7 @@
 # 22. Dot product and cosine similarity
 
+> **Your lesson:** [lessons/22-cosine.md](../../lessons/22-cosine.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Vector search ranks chunks by how close each chunk's embedding is to the question's. "Close" is cosine similarity:
 1 when two vectors point the same way, 0 when they have nothing in common, -1 when they point opposite ways. It
 looks at direction only, so a long chunk and a short one about the same thing still score high.

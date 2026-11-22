@@ -1,5 +1,7 @@
 # 09. Dataclasses
 
+> **Your lesson:** [lessons/09-dataclasses.md](../../lessons/09-dataclasses.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 In module 1 a chunk was a dict, and a typo in a key (`chunk["pgae"]`) only showed up when that line ran. The
 pipeline keeps each chunk in a dataclass instead: a small class whose fields are declared once, with their types, and
 which gets its constructor, its printed form and `==` written for it.

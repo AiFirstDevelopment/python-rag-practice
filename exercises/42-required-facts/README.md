@@ -1,5 +1,7 @@
 # 42. Check required facts in an answer
 
+> **Your lesson:** [lessons/42-required-facts.md](../../lessons/42-required-facts.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A model never words an answer the same way twice, so the harness cannot compare an answer to one expected string.
 Instead each golden case lists the facts a right answer must hold, and for each fact the words that count as saying
 it: "30 days" or "thirty days". Checking is plain text search: no model call, the same result every time.

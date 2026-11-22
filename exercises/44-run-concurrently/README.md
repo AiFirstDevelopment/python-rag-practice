@@ -1,5 +1,7 @@
 # 44. Run cases concurrently
 
+> **Your lesson:** [lessons/44-run-concurrently.md](../../lessons/44-run-concurrently.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Each case waits a few seconds on the model. Run one after another, fifty cases take minutes; run all at once, the
 API answers with rate-limit errors. The harness runs them concurrently, a fixed number at a time.
 

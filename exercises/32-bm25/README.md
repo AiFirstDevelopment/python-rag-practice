@@ -1,5 +1,7 @@
 # 32. BM25 keyword search
 
+> **Your lesson:** [lessons/32-bm25.md](../../lessons/32-bm25.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Keyword search finds the chunks that share words with the question. BM25 is the standard way to score them: a word
 found in few chunks counts for more than one found in most, a word repeated in a chunk counts for more but less
 each time, and a long chunk does not win just by holding more words. It is one of the two searches the pipeline runs.

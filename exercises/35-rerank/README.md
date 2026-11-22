@@ -1,5 +1,7 @@
 # 35. Reranking with a model
 
+> **Your lesson:** [lessons/35-rerank.md](../../lessons/35-rerank.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Fusion gives a pool of likely chunks, ranked by word overlap and vector distance, neither of which reads the
 question. A small, cheap model does: it is shown the question and the pool, and names the passages that answer it.
 Its choice goes first; the rest of the pool follows in fusion order, so the reranker orders the context, it never

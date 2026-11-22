@@ -1,5 +1,7 @@
 # 04. Loops and comprehensions
 
+> **Your lesson:** [lessons/04-comprehensions.md](../../lessons/04-comprehensions.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Keyword search starts by turning text into words. Write it with list and dict comprehensions where they fit.
 
 Write two functions in `solution.py`:

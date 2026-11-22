@@ -1,5 +1,7 @@
 # 39. The whole pipeline in one function
 
+> **Your lesson:** [lessons/39-pipeline.md](../../lessons/39-pipeline.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Each piece of the last nine exercises does one job. A RAG pipeline is those pieces in a fixed order: chunk the
 documents, search them two ways, fuse the two rankings, let a model rerank the best of them, widen what it chose,
 and have the model answer from those passages only. Writing the order down yourself is how you learn where to look

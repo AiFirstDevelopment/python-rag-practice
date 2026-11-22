@@ -1,5 +1,7 @@
 # 30. Chunk text at sentence ends
 
+> **Your lesson:** [lessons/30-chunk-text.md](../../lessons/30-chunk-text.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A pipeline does not search whole documents; it searches pieces of them, called chunks, and sends the best few to the
 model. A chunk cut in the middle of a sentence loses its meaning at both ends, so the cut goes at a sentence end
 whenever one is near enough.

@@ -1,5 +1,7 @@
 # 02. Lists and slicing
 
+> **Your lesson:** [lessons/02-lists.md](../../lessons/02-lists.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A pipeline often returns a chunk together with its neighbours, so the answer sees the sentence before and after.
 That is a slice of a list.
 

@@ -1,5 +1,7 @@
 # 26. A system prompt and a list of messages
 
+> **Your lesson:** [lessons/26-messages.md](../../lessons/26-messages.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A model keeps nothing between calls. A chatbot that follows a conversation sends the whole conversation every
 time, as a list of messages that alternate between `user` and `assistant`. The standing instructions ("answer only
 from the passages") are not a message: they go in the separate `system` argument.

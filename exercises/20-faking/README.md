@@ -1,5 +1,7 @@
 # 20. Faking a dependency
 
+> **Your lesson:** [lessons/20-faking.md](../../lessons/20-faking.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 The last step of a pipeline calls a model: a network call that costs money, takes seconds and answers differently
 each time. None of that belongs in a test. What a test can check exactly is your side of the call: what the code
 sent, and what it did with the reply. So the code takes its client as a parameter, and a test hands it a fake: a

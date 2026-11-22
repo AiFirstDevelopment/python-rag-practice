@@ -1,5 +1,7 @@
 # 48. An app you can test
 
+> **Your lesson:** [lessons/48-test-client.md](../../lessons/48-test-client.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 The real app does two things a test must not: it loads and embeds every document when it starts (slow), and it
 calls a model for each question (money, and a key). FastAPI has an answer to each. Work done once at startup goes in
 a `lifespan` function. Anything a route needs from outside (here, the model client) is declared with `Depends`, and

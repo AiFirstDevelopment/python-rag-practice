@@ -1,5 +1,7 @@
 # 16. Environment variables and a .env file
 
+> **Your lesson:** [lessons/16-env.md](../../lessons/16-env.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A pipeline that calls a model needs an API key, and a key must never be written in the code or committed. It lives
 in an environment variable; on your own machine, in a file named `.env` that git ignores and that `python-dotenv`
 loads into the environment when the program starts. Settings you want to change without editing code (which model,

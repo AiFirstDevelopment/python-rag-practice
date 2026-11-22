@@ -1,5 +1,7 @@
 # 34. Reciprocal rank fusion
 
+> **Your lesson:** [lessons/34-rank-fusion.md](../../lessons/34-rank-fusion.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Keyword search and vector search each return a ranked list, and their scores cannot be compared: a BM25 score and a
 cosine similarity are different units. Reciprocal rank fusion ignores the scores and uses only the places: a chunk
 near the top of either list does well, and a chunk both searches found does best.

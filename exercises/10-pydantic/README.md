@@ -1,5 +1,7 @@
 # 10. A pydantic model for a golden-set line
 
+> **Your lesson:** [lessons/10-pydantic.md](../../lessons/10-pydantic.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 The eval harness reads its questions from a golden set: a file with one JSON object per line. A typo in that file
 (`"fallbak"`, a page written as `"one"`) must stop the run with a clear error, not turn into a wrong score nobody
 notices. A dataclass does not check its values. A pydantic model does, every time one is made.

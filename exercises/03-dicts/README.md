@@ -1,5 +1,7 @@
 # 03. Dictionaries
 
+> **Your lesson:** [lessons/03-dicts.md](../../lessons/03-dicts.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 An eval run produces one record per question. To see where it fails, you count the records by a field.
 
 Write two functions in `solution.py`:

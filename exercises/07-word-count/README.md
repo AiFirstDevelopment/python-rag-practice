@@ -1,5 +1,7 @@
 # 07. Putting it together: the words that matter
 
+> **Your lesson:** [lessons/07-word-count.md](../../lessons/07-word-count.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Keyword search weighs rare words above common ones. The first step is knowing which words a document uses most,
 leaving out words like "the" that say nothing.
 
