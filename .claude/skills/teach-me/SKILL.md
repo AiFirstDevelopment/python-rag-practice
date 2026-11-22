@@ -41,7 +41,9 @@ The lesson (Markdown; see `lessons/01-strings.md` if it exists for the shape):
   link to it: `[The task, any time: exercises/NN-slug/README.md](../exercises/NN-slug/README.md)`.
 - The file it belongs in, in bold (`solution.py`; `cleaning.py` for 12; `pipeline.py` for 50; in module 4, 17-20,
   the example is *tests*, not code).
-- The full worked solution in a plain fenced ` ```python ` block. No highlights. Each line that carries a lesson
+- The full worked solution in a plain fenced ` ```python ` block. No highlights. Write the plainest idiomatic code:
+  `a + b` over an f-string to join two strings, the trivial case first with an early return, nothing a learner's
+  shorter correct answer would beat. Each line that carries a lesson
   ends with a comment holding circled numbers, in order: `  # ①`, or `  # ④ ⑤` for two on one line. Three to six
   numbers in all.
 - Under the code, one note per number, headed by the number in bold and the bit of code it is about
