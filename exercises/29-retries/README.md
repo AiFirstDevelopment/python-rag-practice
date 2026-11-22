@@ -1,5 +1,7 @@
 # 29. Retries with backoff
 
+> **Your lesson:** [lessons/29-retries.md](../../lessons/29-retries.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A provider under load answers some calls with "too many requests" or "overloaded". The call was fine; the moment
 was not. A harness running fifty cases must wait and try again, waiting longer each time (1 s, 2 s, 4 s: exponential
 backoff), and give up after a few tries rather than loop forever. Any other error (a bad request, a bug) is not

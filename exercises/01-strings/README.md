@@ -1,5 +1,7 @@
 # 01. Strings
 
+> **Your lesson:** [lessons/01-strings.md](../../lessons/01-strings.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Text pulled out of a PDF is messy: line breaks in the middle of sentences, runs of spaces, spaces at the ends. Before
 a pipeline cuts text into chunks, it cleans it.
 

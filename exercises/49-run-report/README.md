@@ -1,5 +1,7 @@
 # 49. A run report
 
+> **Your lesson:** [lessons/49-run-report.md](../../lessons/49-run-report.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 An eval run leaves one line of JSON per case: did it pass, how long it took, how many tokens it used. Nobody reads
 fifty lines. What gets read is the summary: the pass rate, where the failures are, which cases are slow, what the
 run cost. The course explores a run in a notebook; here you write the same summary as functions, so it can be

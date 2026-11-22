@@ -1,5 +1,7 @@
 # 25. A first model call and its token counts
 
+> **Your lesson:** [lessons/25-model-call.md](../../lessons/25-model-call.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 The last step of a RAG pipeline sends the question and the passages to a model and reads the reply. Every call is
 billed by tokens (pieces of words): the ones you send and the ones that come back, at different prices. A pipeline
 that does not count them cannot say what an answer costs.

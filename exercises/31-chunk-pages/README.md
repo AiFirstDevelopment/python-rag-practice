@@ -1,5 +1,7 @@
 # 31. Keep file and page with each chunk
 
+> **Your lesson:** [lessons/31-chunk-pages.md](../../lessons/31-chunk-pages.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 An answer is only worth trusting if it says where it came from, so every chunk carries the file and the page it was
 cut from. It also carries its place in its file's order of chunks, which exercise 36 uses to find the chunk before
 and after it.

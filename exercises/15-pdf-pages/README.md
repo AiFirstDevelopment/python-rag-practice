@@ -1,5 +1,7 @@
 # 15. Reading a PDF's pages
 
+> **Your lesson:** [lessons/15-pdf-pages.md](../../lessons/15-pdf-pages.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Half of a company's documents are PDFs. A pipeline needs their text, and it needs to know which page each piece
 came from, because an answer that cites "shipping.pdf, page 2" can be checked and one that cites nothing cannot.
 `pypdf` opens a PDF and gives the text of each page.

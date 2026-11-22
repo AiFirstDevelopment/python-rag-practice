@@ -1,5 +1,7 @@
 # 23. Top k by similarity
 
+> **Your lesson:** [lessons/23-top-k.md](../../lessons/23-top-k.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A search does not return every chunk, it returns the best few: the top k. Given one score per chunk, the pipeline
 needs the positions of the k highest, best first, because a position is what leads back to the chunk's text.
 

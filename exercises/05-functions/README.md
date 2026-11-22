@@ -1,5 +1,7 @@
 # 05. Functions and default arguments
 
+> **Your lesson:** [lessons/05-functions.md](../../lessons/05-functions.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Every chunk a pipeline keeps carries where it came from. Write the function that builds one.
 
 Write `make_chunk(text, source, page=1, tags=None)` in `solution.py`. It returns a dict with the keys `"text"`,

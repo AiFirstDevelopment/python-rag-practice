@@ -1,5 +1,7 @@
 # 11. Optional and unions
 
+> **Your lesson:** [lessons/11-optional.md](../../lessons/11-optional.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Some values in a pipeline are honestly "one of several things": a search that may find nothing, a passage that
 covers one page or a range, a harness result that is found, missed, or not applicable. Python writes these as
 unions, `int | str`, and the commonest union is "this or nothing": `str | None`. The work is in telling the cases

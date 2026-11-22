@@ -1,5 +1,7 @@
 # 38. "I don't know" when nothing fits
 
+> **Your lesson:** [lessons/38-i-dont-know.md](../../lessons/38-i-dont-know.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A model asked a question its passages do not answer will often answer anyway, from what it learned in training, and
 sound just as sure. A RAG pipeline must do the opposite: say it does not know. The course does this with the system
 prompt ("If the answer is not in them, say you don't know."), and the eval harness later checks that the pipeline

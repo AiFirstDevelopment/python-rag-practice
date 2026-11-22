@@ -1,5 +1,7 @@
 # 17. A first test
 
+> **Your lesson:** [lessons/17-first-test.md](../../lessons/17-first-test.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 From here on you test your own code. A pipeline has a dozen small functions, and a change to one (a different chunk
 size, a new cleaning rule) can quietly break another; the eval harness you build later is itself a test suite for
 answers. A test is a function that calls your code and states what must be true with `assert`. `pytest` finds every

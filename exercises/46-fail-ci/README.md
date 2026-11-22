@@ -1,5 +1,7 @@
 # 46. Fail CI on a real drop
 
+> **Your lesson:** [lessons/46-fail-ci.md](../../lessons/46-fail-ci.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A harness nobody runs protects nothing. In CI it runs on every pull request and compares the new run with the one
 saved from the main branch. CI knows one thing about a step: its exit code, 0 for success and anything else for
 failure. So the harness turns its verdict into an exit code: a real drop fails the build, noise and gains do not.

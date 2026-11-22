@@ -1,5 +1,7 @@
 # 14. JSON and JSONL
 
+> **Your lesson:** [lessons/14-json-jsonl.md](../../lessons/14-json-jsonl.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Two file formats carry almost everything a pipeline and its harness keep. JSON holds one value (the summary of an
 eval run). JSONL, "JSON lines", holds one JSON object per line (the golden set, the chunks, each case's result): it
 can be appended to one line at a time, and one bad line does not spoil the rest.

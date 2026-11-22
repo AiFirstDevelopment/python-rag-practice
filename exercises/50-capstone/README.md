@@ -1,5 +1,7 @@
 # 50. Capstone: a pipeline over new documents
 
+> **Your lesson:** [lessons/50-capstone.md](../../lessons/50-capstone.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Everything so far was one function at a time, with a starter. Here there is none. You build the pipeline of module
 7 over a set of documents you have not seen, and the golden set of module 8 says whether it works. This is the job
 as it arrives in practice: a folder of documents, a list of questions, and nothing else.

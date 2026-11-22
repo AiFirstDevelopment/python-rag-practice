@@ -1,5 +1,7 @@
 # 36. Widening a chunk with its neighbours
 
+> **Your lesson:** [lessons/36-widen.md](../../lessons/36-widen.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A chunk is cut at a sentence end, so a rule and its exception often land in two chunks: "Returns are accepted within
 30 days." in one, "Sale items are the exception." in the next. Search finds the first, and the model would answer
 without the second. Widening joins each chosen chunk with the chunk before and after it in the same file, up to a

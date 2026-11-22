@@ -1,5 +1,7 @@
 # 28. Async and gather
 
+> **Your lesson:** [lessons/28-gather.md](../../lessons/28-gather.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A model call is mostly waiting: a second or more for the reply to come back. An eval run of fifty cases one after
 another waits fifty times; with `async` the fifty calls wait at the same time and the run takes about as long as the
 slowest. A provider also limits how many calls you may have open at once, so the pipeline caps it.

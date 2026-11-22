@@ -1,5 +1,7 @@
 # 24. A matrix of embeddings, searched at once
 
+> **Your lesson:** [lessons/24-embedding-matrix.md](../../lessons/24-embedding-matrix.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Calling `cosine` once per chunk in a Python loop is fine for ten chunks and slow for a hundred thousand. The
 pipeline keeps every chunk's embedding as one row of a matrix, makes every row length 1 once, and then a search is
 a single matrix-vector product: one line, all the scores.

@@ -1,5 +1,7 @@
 # 12. A module of your own, and imports
 
+> **Your lesson:** [lessons/12-modules.md](../../lessons/12-modules.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A pipeline is not one file. Chunking, search and reranking each live in a module, and the file that runs the
 pipeline imports from them. A module is nothing more than a `.py` file; importing it runs it once and gives you its
 names.

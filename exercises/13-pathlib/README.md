@@ -1,5 +1,7 @@
 # 13. Paths with pathlib
 
+> **Your lesson:** [lessons/13-pathlib.md](../../lessons/13-pathlib.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A pipeline starts by finding its documents: every text file and PDF in a folder. It ends by writing files of its
 own. `pathlib.Path` is how Python names files and folders: an object you join with `/`, ask for its parts, and
 read and write through, the same on every operating system.

@@ -1,5 +1,7 @@
 # 47. A FastAPI endpoint for the pipeline
 
+> **Your lesson:** [lessons/47-endpoint.md](../../lessons/47-endpoint.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 A pipeline that runs from the command line answers one person at one keyboard. Behind an HTTP endpoint, a web page
 or another program can ask it: one `POST /ask` with the question as JSON, the answer and its sources back as JSON.
 FastAPI reads the request into a pydantic model, so a request of the wrong shape is refused before your code runs.

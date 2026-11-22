@@ -1,5 +1,7 @@
 # 37. A prompt that answers from passages only
 
+> **Your lesson:** [lessons/37-answer-prompt.md](../../lessons/37-answer-prompt.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Everything so far chooses what the model reads. This is the step that makes it a RAG pipeline: the model is told to
 answer from the passages and nothing else, and each passage is labelled with its file and page so an answer can be
 traced to where it came from.

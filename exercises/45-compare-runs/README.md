@@ -1,5 +1,7 @@
 # 45. Compare two runs
 
+> **Your lesson:** [lessons/45-compare-runs.md](../../lessons/45-compare-runs.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 You change the chunk size and the pass count goes from 15 to 16. Better? A model does not give the same answer
 twice, so one case can flip between two runs of the same code. The harness needs a rule that says when a difference
 is a real change and when it is noise, and the rule has to be simple enough to argue with.

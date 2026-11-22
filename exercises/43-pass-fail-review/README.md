@@ -1,5 +1,7 @@
 # 43. Pass, fail and review
 
+> **Your lesson:** [lessons/43-pass-fail-review.md](../../lessons/43-pass-fail-review.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Each case ends as one of three words. `pass` and `fail` are decided by code. `review` means code cannot tell and a
 person must read the answer: the pipeline answered a question it was expected to decline, and only a reader can say
 whether it made something up or the documents hold the answer after all.

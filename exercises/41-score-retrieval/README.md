@@ -1,5 +1,7 @@
 # 41. Score retrieval
 
+> **Your lesson:** [lessons/41-score-retrieval.md](../../lessons/41-score-retrieval.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 When an answer is wrong, the first question is whether the pipeline even found the right text. The harness answers
 that without a model call: each golden case names the file and page its answer comes from, and the harness checks
 that the passages the pipeline retrieved cover them. It is free, so it runs on every change.

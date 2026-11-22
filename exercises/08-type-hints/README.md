@@ -1,5 +1,7 @@
 # 08. Type hints
 
+> **Your lesson:** [lessons/08-type-hints.md](../../lessons/08-type-hints.md), the worked example `/teach-me` writes for you (type `/teach-me` if the link doesn't open yet). When your code is written, type `/check`.
+
 Python runs without types, but a pipeline passes pages, chunks and scores through a dozen functions, and a hint on
 each signature is how the next reader (and the editor, and pydantic later) knows what goes in and what comes out.
 Python does not check hints when the code runs; they are read by tools and by people.
